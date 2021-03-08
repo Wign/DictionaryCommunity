@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class RequestTableViewController: UITableViewController, UITable {
 
     override func viewDidLoad() {
         super.viewDidLoad()
