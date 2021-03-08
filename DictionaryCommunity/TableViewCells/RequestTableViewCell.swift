@@ -8,7 +8,8 @@
 import UIKit
 
 class RequestTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var literalLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -9,12 +9,15 @@
 /* Begin PBXBuildFile section */
 		BEE3B62F25F2A17D004F3973 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B62E25F2A17D004F3973 /* AppDelegate.swift */; };
 		BEE3B63125F2A17D004F3973 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B63025F2A17D004F3973 /* SceneDelegate.swift */; };
-		BEE3B63325F2A17D004F3973 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B63225F2A17D004F3973 /* ViewController.swift */; };
+		BEE3B63325F2A17D004F3973 /* RequestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B63225F2A17D004F3973 /* RequestTableViewController.swift */; };
 		BEE3B63625F2A17D004F3973 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE3B63425F2A17D004F3973 /* Main.storyboard */; };
 		BEE3B63825F2A17E004F3973 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEE3B63725F2A17E004F3973 /* Assets.xcassets */; };
 		BEE3B63B25F2A17E004F3973 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEE3B63925F2A17E004F3973 /* LaunchScreen.storyboard */; };
 		BEE3B64625F2A17E004F3973 /* DictionaryCommunityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B64525F2A17E004F3973 /* DictionaryCommunityTests.swift */; };
 		BEE3B65125F2A17E004F3973 /* DictionaryCommunityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B65025F2A17E004F3973 /* DictionaryCommunityUITests.swift */; };
+		BEE3B67025F2CA2C004F3973 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B66F25F2CA2C004F3973 /* RequestTableViewCell.swift */; };
+		BEE3B67925F2CCA5004F3973 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B67825F2CCA5004F3973 /* Request.swift */; };
+		BEE3B67E25F6420E004F3973 /* NoRequestsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE3B67D25F6420E004F3973 /* NoRequestsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +41,7 @@
 		BEE3B62B25F2A17D004F3973 /* DictionaryCommunity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DictionaryCommunity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE3B62E25F2A17D004F3973 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BEE3B63025F2A17D004F3973 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BEE3B63225F2A17D004F3973 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BEE3B63225F2A17D004F3973 /* RequestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewController.swift; sourceTree = "<group>"; };
 		BEE3B63525F2A17D004F3973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEE3B63725F2A17E004F3973 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BEE3B63A25F2A17E004F3973 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,9 @@
 		BEE3B64C25F2A17E004F3973 /* DictionaryCommunityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DictionaryCommunityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEE3B65025F2A17E004F3973 /* DictionaryCommunityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryCommunityUITests.swift; sourceTree = "<group>"; };
 		BEE3B65225F2A17E004F3973 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEE3B66F25F2CA2C004F3973 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		BEE3B67825F2CCA5004F3973 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		BEE3B67D25F6420E004F3973 /* NoRequestsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoRequestsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +105,11 @@
 		BEE3B62D25F2A17D004F3973 /* DictionaryCommunity */ = {
 			isa = PBXGroup;
 			children = (
+				BEE3B67725F2CC88004F3973 /* Models */,
+				BEE3B66E25F2CA00004F3973 /* TableViewCells */,
+				BEE3B66425F2A24B004F3973 /* ViewControllers */,
 				BEE3B62E25F2A17D004F3973 /* AppDelegate.swift */,
 				BEE3B63025F2A17D004F3973 /* SceneDelegate.swift */,
-				BEE3B63225F2A17D004F3973 /* ViewController.swift */,
 				BEE3B63425F2A17D004F3973 /* Main.storyboard */,
 				BEE3B63725F2A17E004F3973 /* Assets.xcassets */,
 				BEE3B63925F2A17E004F3973 /* LaunchScreen.storyboard */,
@@ -126,6 +134,31 @@
 				BEE3B65225F2A17E004F3973 /* Info.plist */,
 			);
 			path = DictionaryCommunityUITests;
+			sourceTree = "<group>";
+		};
+		BEE3B66425F2A24B004F3973 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3B63225F2A17D004F3973 /* RequestTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BEE3B66E25F2CA00004F3973 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3B66F25F2CA2C004F3973 /* RequestTableViewCell.swift */,
+				BEE3B67D25F6420E004F3973 /* NoRequestsTableViewCell.swift */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		BEE3B67725F2CC88004F3973 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BEE3B67825F2CCA5004F3973 /* Request.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,8 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEE3B63325F2A17D004F3973 /* ViewController.swift in Sources */,
+				BEE3B63325F2A17D004F3973 /* RequestTableViewController.swift in Sources */,
+				BEE3B67025F2CA2C004F3973 /* RequestTableViewCell.swift in Sources */,
+				BEE3B67925F2CCA5004F3973 /* Request.swift in Sources */,
 				BEE3B62F25F2A17D004F3973 /* AppDelegate.swift in Sources */,
+				BEE3B67E25F6420E004F3973 /* NoRequestsTableViewCell.swift in Sources */,
 				BEE3B63125F2A17D004F3973 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,7 +482,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Wign.DictionaryCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -465,7 +501,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Wign.DictionaryCommunity;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
